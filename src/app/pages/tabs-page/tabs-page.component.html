@@ -1,0 +1,17 @@
+<tabs-with-content>
+  <ng-template tabName="tab 1" >
+    <div>tab 1 content</div>
+  </ng-template>
+  <ng-template tabName="tab 2" >
+    <div>tab 2 content</div>
+  </ng-template>
+  <ng-template tabName="tab 3" >
+    <div>tab 3 content</div>
+  </ng-template>
+</tabs-with-content>
+
+<s-tabs-with-content>
+    <div *sTabName="'tab 1'" >tab 1 content</div>
+    <div *sTabName="'tab 2'">tab 2 content</div>
+    <div *sTabName="'tab 3'">tab 3 content</div>
+</s-tabs-with-content>

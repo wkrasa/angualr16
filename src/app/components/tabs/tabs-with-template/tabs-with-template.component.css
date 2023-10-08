@@ -1,0 +1,12 @@
+.tabs-header{
+  display: flex;
+  padding: 4px;
+}
+
+.tabs-header button{
+  margin:  2px;
+}
+
+.tabs-content{
+  padding: 8px;
+}

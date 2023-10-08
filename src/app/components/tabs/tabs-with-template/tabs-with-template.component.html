@@ -1,0 +1,6 @@
+<div class="tabs-header">
+  <button *ngFor="let tab of tabs; index as i" (click)="selectTab(i)">{{tab.tabName}}</button>
+</div>
+<div class="tabs-content">
+  <ng-container [ngTemplateOutlet]="selectedTab"></ng-container>
+</div>

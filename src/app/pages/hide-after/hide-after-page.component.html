@@ -1,0 +1,15 @@
+
+<section *hideAfter="3000 as time; replaceWith placeholder; let counter = counter; let default" class="banner primary">
+  <h2>Temporary content</h2>
+  <p>This layout should disappear in {{default}} seconds. It disappears in: {{counter}}</p>
+</section>
+<ng-template #placeholder let-hiddenAfter="hideAfter" let-myDefault let-counter="counter">
+  <section class="banner placeholder">
+    <h2>Placeholder</h2>
+    <p>Here was some content. It was visible for {{hiddenAfter}} seconds. It disappears in: {{counter}}</p>
+  </section>
+</ng-template>
+<with-content>
+  <div>test</div>
+  <div selector>test 2</div>
+</with-content>
