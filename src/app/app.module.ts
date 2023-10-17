@@ -19,6 +19,12 @@ import { BorderDirective } from './directives/border.directive';
 import { StrokeDirective } from './directives/stroke.directive';
 import { HostWithStrokeDirective } from './directives/host-with-stroke.directive';
 import { StandAloneComponent } from './components/hierarchy/stand-alone/stand-alone.component';
+import { DisplayComponent } from './components/factory/display/display.component';
+import { FirstDynamicComponent } from './components/factory/first-dynamic/first-dynamic.component';
+import { SecondDynamicComponent } from './components/factory/second-dynamic/second-dynamic.component';
+import { ThirdDynamicComponent } from './components/factory/third-dynamic/third-dynamic.component';
+import { ComponentHostDirective } from './components/factory/component-host.directive';
+import { TodoComponent } from './components/todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -38,8 +44,13 @@ import { StandAloneComponent } from './components/hierarchy/stand-alone/stand-al
     ParentComponent,
     ChildComponent,
     GrandChildComponent,
-    HostWithStrokeDirective
-
+    HostWithStrokeDirective,
+    DisplayComponent,
+    FirstDynamicComponent,
+    SecondDynamicComponent,
+    ThirdDynamicComponent,
+    ComponentHostDirective,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
